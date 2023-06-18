@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>batch1 Lecture 61 Bulb on off effect with JavaScript</title>
+
+    <style>
+        body {
+            background: #000;
+        }
+        .box{
+           margin-top: 200px;
+           
+            text-align: center;
+        }
+       
+
+       
+    </style>
+
+
+    <script>
+
+        let clickMe = (state) => {
+            //alert("okkk")
+            if (state == 'on'){
+                document.body.style.background = "yellow";
+                document.querySelector(".a_img").setAttribute('src','./img/bulb2.png');
+
+            }else{
+                document.body.style.background = "black";
+                document.querySelector(".a_img").setAttribute('src','./img/bulb1.png');
+
+            }
+
+           
+
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="box a_tbdr">
+        <img width="300px" src="./img/bulb1.png" alt="" class=" a_img">
+        <br>
+    
+        <button onclick="clickMe('on')" style="margin: 20px;">ON</button>
+        <button onclick="clickMe('off')" style="margin: 20px;">OFF</button>
+
+    </div>
+
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
